@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Survey Form</h1>
+
+    <form id="form">
+        <div class="info">
+            <label for="name" id="label-name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+
+        <div class="info">
+            <label for="email" id="label-email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="info">
+            <label for="age" id="label-age">Age</label>
+            <input type="text" id="age" placeholder="Enter your age" />
+        </div>
+
+        <div class="info">
+            <label for="role" id="label-role">Role</label>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="info">
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br>
+        </div>
+
+        <div class="info">
+            <label>Languages and Frameworks known <small>(Check all that apply)</small></label>
+            <label for="inp-1">
+                <input type="checkbox" name="languages" value="C" > C
+            </label>
+            <label for="inp-2">
+                <input type="checkbox" name="languages" value="C++"> C++
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="languages" value="C#"> C#
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="languages" value="Java"> Java
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="languages" value="Python"> Python
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="languages" value="JavaScript"> JavaScript
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="languages" value="React"> React
+            </label>
+            <label for="inp-8">
+                <input type="checkbox" name="languages" value="Angular"> Angular
+            </label>
+            <label for="inp-9">
+                <input type="checkbox" name="languages" value="Django"> Django
+            </label>
+            <label for="inp-10">
+                <input type="checkbox" name="languages" value="Spring"> Spring
+            </label>
+        </div>
+
+    
+
+    <div class="info">
+        <label for="comment">Any comments or suggestions</label>
+        <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+    </div>
+
+    <button type="submit" value="submit">Submit</button>
+</form>
+
+<div class="output" id="output">
+    <h2>Form Data:</h2>
+    <p><strong>Name:</strong> <span id="output-name"></span></p>
+    <p><strong>Email:</strong> <span id="output-email"></span></p>
+    <p><strong>Age:</strong> <span id="output-age"></span></p>
+    <p><strong>Role:</strong> <span id="output-role"></span></p>
+    <p><strong>Gender:</strong> <span id="output-gender"></span></p>
+    <p><strong>Languages:</strong> <span id="output-languages"></span></p>
+    <p><strong>Comment:</strong> <span id="output-comment"></span></p>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
